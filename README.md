@@ -222,26 +222,3 @@ karmate/
     public/images/hero-fire.jpg   # gate-page background
 ```
 
-## What changed in the modify round
-
-Everything above already reflects the current behavior; in short, this
-round of changes on top of the original build:
-
-- Business accounts now have a fenced-off experience: they can't see or
-  use "File a Report" / `/upload`, and only they can see/use "Business
-  Desk" / `/business` — enforced in both the nav and the pages themselves.
-- Task acceptance and task completion are now two separate hunter/admin
-  steps (`accept` → `submit` → `complete`), with a `pending_review` status
-  in between, instead of an admin being able to complete a task the hunter
-  never actually finished.
-- A new Court Room area (`/court` list + `/court/[id]` room) replaced the
-  old pay-per-vote model with pay-once-to-enter, free voting, live chat
-  restricted to the two named parties, free emoji reactions for everyone,
-  shared chat history for the whole room, and a cartoon pixel-art
-  presentation of the two sides.
-- A logged-out gate page now sits in front of the whole app (project name,
-  slogan, animated explainer, Log in / Sign up), with the previous
-  homepage content moved to `/home` for logged-in users.
-- The gate page was redesigned around the supplied hero image as a
-  full-bleed background, an Apple-style top shadow behind the nav, and a
-  no-scroll layout with copy anchored to the bottom-left.
